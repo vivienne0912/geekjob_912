@@ -1,0 +1,68 @@
+<%-- 
+    Document   : callenge7
+    Created on : 2017/06/30, 11:32:00
+    Author     : vivienne
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.ArrayList" %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
+<%
+int[]data1=new int[5];
+String[]data={"コーヒー","コーラ","オレンジジュース"};
+%>
+    
+
+        
+
+
+<%
+     
+
+ArrayList<String>data2 =new ArrayList <String>();
+        
+data2.add("10");
+data2.add("100");
+data2.add("soeda");
+
+data2.set(1,"101");
+out.print(data2.get(1));
+
+
+
+%>
+<%@ page import="java.util.HashMap"%>           
+
+<%
+HashMap <String,String>user1
+=new HashMap<String,String>();
+HashMap <String,String>user2
+=new HashMap<String,String>();
+
+user1.put("name","jack");user1.put("age","27");
+user2.put("name","ozil");user2.put("age","28");
+
+HashMap <Integer,String>kadai1
+=new HashMap<Integer,String>();
+
+kadai1.put(1,"AAA");
+
+HashMap <String,String>kadai2
+=new HashMap<String,String>();
+
+kadai2.put("hello","world");
+
+ArrayList<HashMap>userdata=new ArrayList<HashMap>();
+
+userdata.add(user1);
+out.print(user1);
+%>       
